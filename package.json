@@ -1,0 +1,73 @@
+{
+	"name": "ads-network-proxy-test",
+	"displayName": "ADS Network Proxy Test",
+	"license": "MIT",
+	"publisher": "cheenamalhotra",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cheenamalhotra/ads-network-proxy-test.git"
+	},
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./out/extension.js",
+	"activationEvents": [
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "network-proxy-test.test-connection",
+				"category": "Proxy Test",
+				"title": "Test Network Connection (HTTP)"
+			},
+			{
+				"command": "network-proxy-test.test-connection-http2",
+				"category": "Proxy Test",
+				"title": "Test Network Connection (HTTP2)"
+			},
+			{
+				"command": "network-proxy-test.test-connection-fetch",
+				"category": "Proxy Test",
+				"title": "Test Network Connection (Fetch)"
+			},
+			{
+				"command": "network-proxy-test.test-connection-axios",
+				"category": "Proxy Test",
+				"title": "Test Network Connection (Axios)"
+			},
+			{
+				"command": "network-proxy-test.show-os-certificates",
+				"category": "Proxy Test",
+				"title": "Show OS Certificates (VS Code)"
+			},
+			{
+				"command": "network-proxy-test.show-builtin-certificates",
+				"category": "Proxy Test",
+				"title": "Show Built-In Certificates (VS Code)"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts"
+	},
+  "dependencies":
+  {
+    "undici": "5.27.0",
+    "axios": "^1.6.0"
+  },
+	"devDependencies": {
+		"@types/node": "^18.15.11",
+		"@types/vscode": "^1.77.0",
+		"@typescript-eslint/eslint-plugin": "^5.57.0",
+		"@typescript-eslint/parser": "^5.57.0",
+		"eslint": "^8.37.0",
+		"typescript": "^5.0.3"
+	}
+}
