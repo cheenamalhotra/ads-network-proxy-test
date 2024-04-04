@@ -59,7 +59,7 @@
 	},
   "dependencies":
   {
-    "undici": "5.28.3",
+    "undici": "5.28.4",
     "axios": "^1.6.0"
   },
 	"devDependencies": {
