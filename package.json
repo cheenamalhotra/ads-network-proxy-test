@@ -60,7 +60,7 @@
   "dependencies":
   {
     "undici": "5.28.4",
-    "axios": "^1.6.0"
+    "axios": "^1.7.4"
   },
 	"devDependencies": {
 		"@types/node": "^18.15.11",
